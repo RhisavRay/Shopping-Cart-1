@@ -16,6 +16,38 @@ section
 
 .cards:hover
 {
-    box-shadow: 0 10px 10px 10px 100px rgba(0, 0, 0, 1);
+    box-shadow: 0 5px 5px 5px rgb(189, 183, 183);
     cursor: pointer;
+}
+
+.image_box img
+{
+    width: 150px;
+    height: 200px;
+}
+
+.details p:nth-child(1)
+{
+    font-weight: bold;
+}
+
+.details p:nth-child(2)
+{
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.details p:nth-child(3)
+{
+    font-weight: bold;
+    color: gray;
+}
+
+.details button
+{
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    background-color: skyblue;
+    border-radius: 2px;
 }
