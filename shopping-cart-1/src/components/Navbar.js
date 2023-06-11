@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/navbar.css'
 
-const Navbar = () => {
+const Navbar = ({size}) => {
   return (
     <nav>
         <div className='nav_box'>
@@ -12,6 +12,7 @@ const Navbar = () => {
                 <span>
                     <i className='fas fa-cart-plus'></i>
                 </span>
+                <span>{size}</span>
             </div>
         </div>
     </nav>

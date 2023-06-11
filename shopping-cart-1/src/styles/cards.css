@@ -50,4 +50,5 @@ section
     font-weight: bold;
     background-color: skyblue;
     border-radius: 2px;
+    cursor: pointer;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/cards.css'
 
-const Cards = ({item}) => {
+const Cards = ({item, handleClick}) => {
 
     const {title, author, price, img} = item
 
@@ -14,7 +14,7 @@ const Cards = ({item}) => {
             <p>{title}</p>
             <p>{author}</p>
             <p>Price - {price}Rs</p>
-            <button>Add to Cart</button>
+            <button onClick={() => handleClick(item)}>Add to Cart</button>
         </div>
     </div>
   );
