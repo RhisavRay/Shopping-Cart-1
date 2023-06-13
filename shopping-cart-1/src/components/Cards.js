@@ -3,7 +3,7 @@ import '../styles/cards.css'
 
 const Cards = ({item, handleClick}) => {
 
-    const {title, author, price, img} = item
+  const {title, author, price, img} = item
 
   return(
     <div className='cards'>
@@ -14,7 +14,7 @@ const Cards = ({item, handleClick}) => {
             <p>{title}</p>
             <p>{author}</p>
             <p>Price - {price}Rs</p>
-            <button onClick={() => handleClick(item)}>Add to Cart</button>
+            <button onClick={() => handleClick({item})}>Add to Cart</button>
         </div>
     </div>
   );
