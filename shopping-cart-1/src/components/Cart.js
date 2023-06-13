@@ -14,20 +14,21 @@ const Cart = ({cart, setCart}) => {
               <img src={item.img} />
               <p>{item.title}</p>
             </div>
-            <div>
-              <button>+</button>
+            <div className='plus_minus'>
               <button>-</button>
+              <button>{item.amount}</button>
+              <button>+</button>
             </div>
             <div>
-              <span>{item.price}</span>
+              <span>Rs. {item.price}</span>
               <button>Remove</button>
             </div>
           </div>
         ))
       }
-      <div>
+      <div className='total'>
         <span>Total: </span>
-        <span>Rs.{price}</span>
+        <span>Rs. {price}</span>
       </div>
     </article>
   )
