@@ -8,7 +8,7 @@ const Cart = ({cart, setCart}) => {
   return (
     <article>
       {
-        cart.map((item) => {
+        cart.map((item) => (
           <div className='cart_box' key={item.id}>
             <div className='cart_img'>
               <img src={item.img} />
@@ -23,7 +23,7 @@ const Cart = ({cart, setCart}) => {
               <button>Remove</button>
             </div>
           </div>
-        })
+        ))
       }
       <div>
         <span>Total: </span>
