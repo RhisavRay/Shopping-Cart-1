@@ -1,14 +1,14 @@
 import React from 'react'
 import '../styles/navbar.css'
 
-const Navbar = ({size}) => {
+const Navbar = ({size, setShow}) => {
   return (
     <nav>
         <div className='nav_box'>
-            <span className='my_shop'>
+            <span className='my_shop_logo' onClick={() => setShow(true)}>
                 My Shopping
             </span>
-            <div className='cart'>
+            <div className='cart' onClick={() => setShow(false)}>
                 <span>
                     <i className='fas fa-cart-plus'></i>
                 </span>

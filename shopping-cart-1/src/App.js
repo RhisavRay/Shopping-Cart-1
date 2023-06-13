@@ -31,9 +31,10 @@ function App()
 
   return (
     <>
-      <Navbar size = {cart.length}/>
-      <Products handleClick={handleClick}/>
-      <Cart/>
+      <Navbar size = {cart.length} setShow = {setShow}/>
+      {
+        show ? <Products handleClick={handleClick}/> : <Cart cart = {cart} setCart = {setCart}/>
+      }
       {
         warning && <div className='warning'>Item is already added to your cart</div>
       }
